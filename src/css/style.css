@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body {
+    font-family: "Poppins", serif;
+    height: 300vh;
+}
+
+.cabecalho {
+    background-color: #252323;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.menu li {
+    margin: 30px;
+    cursor: pointer;
+}
+
+li a {
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: #000;
+    background-color: #ffffff;
+}
+
+#icone-menu-hamburguer {
+    position: absolute;
+    bottom: 40px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+nav#navegação-mini-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.mini-menu {
+    position: absolute;
+    top: -20px;
+    display: flex;
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444343;
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.mini-menu li {
+    margin: 20px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.mini-menu li:hover {
+    outline: 1px solid #fff;
+}
+
+.visivel {
+    display: flex;
+}
+
+.introducao {
+    background: linear-gradient(rgba(63, 22, 81, 0.8), rgba(63, 22, 81, 0.8)), url("../images/background-cidade-roxa-tecnológica.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.introducao h2 {
+    font-size: 40px;
+    font-family: "Roboto Mono", serif;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+}
+
+.introducao::after {
+    content: url("../images/seta.svg");
+    position: absolute;
+    transform: rotate(10deg);
+    bottom: 180px;
+    font-size: 60px;
+    animation: animacao-de-seta 0.6s infinite alternate ease-in-out;
+}
+
+.servico {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    color: #000;
+    /* border: 2px solid rgb(37, 36, 37, 0.1); */
+    gap: 60px;
+}
+
+.servico .texto h1 {
+    background: linear-gradient(45deg, #61059e, #9900ff, #c043c0, #c906c9);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    min-width: 15px;
+}
+
+.servico .texto p {
+    text-align: justify;
+    max-width: 670px;
+    font-size: 20px;
+    hyphens: auto;
+}
+
+.servico img {
+    border-radius: 50%;
+    box-shadow: -5px 3px 18px 10px #afafaf;
+}
+
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.habilidades h2 {
+    font-size: 27px;
+    text-align: center;
+    margin: 0px 0px 40px 354px;
+    font-weight: 600;
+    border: 1px solid rgb(37, 36, 37, 0.6);
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #970890,  #c40bba,  #ad34c5);
+    color: #fff;
+    background-size: 500% 100%;
+    animation: degrade-animado 3s infinite alternate;
+}
+
+.habilidades .conhecimento-de-programacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 63px;
+}
+
+
+.habilidades .conhecimento-de-programacao li img {
+    cursor: pointer;
+    width: 120px;
+}
+
+.habilidades .conhecimento-de-programacao li:first-child img {
+    margin-left: 354px;
+}
+
+.habilidades .conhecimento-de-programacao li:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+@keyframes animacao-de-seta {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0.4em);
+        opacity: 0.9;
+    }
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
