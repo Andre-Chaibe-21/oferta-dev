@@ -5,7 +5,6 @@
 
 body {
     font-family: "Poppins", serif;
-    height: 300vh;
 }
 
 .cabecalho {
@@ -107,7 +106,7 @@ nav#navegação-mini-menu {
     content: url("../images/seta.svg");
     position: absolute;
     transform: rotate(10deg);
-    bottom: 180px;
+    bottom: 10vh;
     font-size: 60px;
     animation: animacao-de-seta 0.6s infinite alternate ease-in-out;
 }
@@ -156,7 +155,7 @@ nav#navegação-mini-menu {
 .habilidades h2 {
     font-size: 27px;
     text-align: center;
-    margin: 0px 0px 40px 354px;
+    margin: 0px 0px 40px 298px;
     font-weight: 600;
     border: 1px solid rgb(37, 36, 37, 0.6);
     padding: 10px 100px 10px 100px;
@@ -181,13 +180,12 @@ nav#navegação-mini-menu {
 }
 
 .habilidades .conhecimento-de-programacao li:first-child img {
-    margin-left: 354px;
+    margin-left: 300px;
 }
 
 .habilidades .conhecimento-de-programacao li:hover {
     transition: 0.3s ease-in-out;
-    transform: scale(1.1);
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 @keyframes animacao-de-seta {

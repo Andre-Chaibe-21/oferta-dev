@@ -23,6 +23,10 @@
         margin: 0px 0px 40px 0px;
     }
 
+    .habilidades .conhecimento-de-programacao li:hover {
+        transform: scale(0.9);
+    }
+
     .habilidades .conhecimento-de-programacao li:first-child img {
         margin-left: 0px;
     }
