@@ -80,9 +80,6 @@
     .servico .texto h1 {
         font-size: 28px;
     }
-}
-
-@media(max-width: 478px) {
 
     .habilidades h2 {
         padding: 10px 30px 10px 30px;
