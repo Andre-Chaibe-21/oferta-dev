@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -18,8 +23,8 @@
             <ul class="menu">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#servico">Quem sou eu</a></li>
-                <li><a href="">Meus projetos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#secao-duvidas">Dúvidas frequentes</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
 
@@ -32,8 +37,8 @@
             <ul class="mini-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servico">Quem sou eu</a></li>
-                <li><a href="">Meus projetos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#secao-duvidas">Dúvidas frequentes</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -66,12 +71,13 @@
 
 
     <div class="habilidades">
-        <h2>Habilidades técnicas :</h2> 
+        <h2>Habilidades técnicas :</h2>
 
         <ul class="conhecimento-de-programacao">
 
             <li>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img src="./src/images/HTML-icon.png" alt="logo do HTML">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img
+                        src="./src/images/HTML-icon.png" alt="logo do HTML">
                 </a>
             </li>
 
@@ -90,16 +96,102 @@
 
     </div>
 
-    <section>
+    <section class="area-de-perguntas" id="secao-duvidas">
+
+        <div class="container">
+            <img class="imagem-da-area" src="./src/images/icone-da-seção-de-dúvidas..-removebg-preview.png"
+                alt="cliente testando o produto que pediu">
+
+            <div class="duvidas-frequentes">
+
+                <h2>FAQ</h2>
+
+                <div class="campo" id="campo-um">
+
+                    <div class="duvida">
+                        <p>Diferença entre um programador web e um designer.</p>
+                        <img class="setas-fechadas" src="./src/images/seta-fechada.png" alt="seta indicando conteúdo oculto">
+                    </div>
+
+                    <p class="resposta nao-mostrar">
+                        O designer cuida da aparência visual do site na forma estática, enquanto o programador web
+                        transforma esse design em algo dinâmico e funcional, lidando com códigos, funcionalidades e
+                        integrações
+                    </p>
+
+                    <div class="linha-divisoria"></div>
+
+                </div>
+
+                <div class="campo" id="campo-dois">
+
+                    <div class="duvida">
+                        <p>Posso acompanhar o desenvolvimento do meu projeto.</p>
+                        <img class="setas-fechadas" src="./src/images/seta-fechada.png" alt="seta indicando conteúdo oculto">
+                    </div>
+
+                    <p class="resposta nao-mostrar">Sim. Você será atualizado regularmente sobre o progresso, e feedback
+                        será coletado em cada etapa para garantir que o site atenda às suas expectativas.</p>
+
+                    <div class="linha-divisoria"></div>
+
+                </div>
+
+                <div class="campo" id="campo-tres">
+
+                    <div class="duvida">
+                        <p>Quais métodos de pagamento são aceitos.</p>
+                        <img class="setas-fechadas" src="./src/images/seta-fechada.png" alt="seta indicando conteúdo oculto">
+                    </div>
+
+                    <p class="resposta nao-mostrar">Aceitou cartões de crédito, débito, Pix, ou boleto bancário.</p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <footer>
+    </div>
 
+
+
+    <footer class="rodape" id="contato">
+
+        <div>
+            <h2> Todos os direitos reservados.© André Chaibe</h2>
+            <p>Email: AndrechaibeDev@gmail.com</p>
+            <p>Conheça mais o meu trabalho em :</p>
+
+            <div class="redes">
+                <ul>
+                    <li>
+                        <a id="link-linkedin" target="_blank" href="https://www.linkedin.com/in/andre-chaibe/"><i
+                                class="fa-brands fa-linkedin-in"></i>Linkedin</a>
+                    </li>
+                    <li>
+                        <a id="link-instagram" target="_blank" href="https://www.instagram.com/andredevcode/"><i
+                                class="fa-brands fa-instagram"></i>Instagram</a>
+                    </li>
+                    <li>
+                        <a id="link-github" target="_blank" href="https://github.com/Andre-Chaibe-21"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
 
     </footer>
 
     <script src="./src/js/menu.js"></script>
+    <script src="./src/js/secao-duvida.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 

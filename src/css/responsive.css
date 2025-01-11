@@ -33,6 +33,42 @@
 
 }
 
+@media(max-width: 1000px) {
+    div.container {
+        width: 590px;
+        height: 347px;
+    }
+
+    .imagem-da-area {
+        width: 200px;
+        height: 200px;
+        right: 490px;
+        bottom: 85px;
+    }
+
+    .duvidas-frequentes {
+        margin-left: 130px;
+    }
+
+}
+
+@media(max-width: 830px) {
+    div.container {
+        width: 590px;
+        height: 347px;
+    }
+
+    .duvidas-frequentes {
+        margin-left: 100px;
+    }
+
+    .imagem-da-area {
+        width: 120px;
+        height: 120px;
+        bottom: 270px;
+    }
+}
+
 @media(max-width: 720px) {
     #icone-de-localizacao {
         display: none;
@@ -58,6 +94,24 @@
     #icone-menu-hamburguer {
         display: flex;
     }
+
+    .area-de-perguntas div.container {
+        width: 490px;
+        height: 347px;
+    }
+
+    .duvidas-frequentes {
+        margin-left: 40px;
+    }
+
+    div.duvida .setas-fechadas {
+        right: 20px;
+    }
+
+    .imagem-da-area {
+        right: -30px;
+        bottom: 270px;
+    }
 }
 
 @media(min-width: 660px) {
@@ -73,6 +127,49 @@
 
     .habilidades .conhecimento-de-programacao li img {
         width: 98px;
+    }
+}
+
+@media(max-width: 580px) {
+    .imagem-da-area {
+        right: 10px;
+        bottom: 260px;
+    }
+}
+
+@media(max-width: 515px) {
+    .area-de-perguntas div.container {
+        width: 450px;
+        height: 347px;
+    }
+
+    div.duvida {
+        margin: 15px 25px 15px -18px;
+    }
+
+    .duvidas-frequentes h2 {
+        margin-left: -18px;
+    }
+
+    div.duvida p {
+        font-size: 15px;
+    }
+
+    .resposta {
+        margin: 10px 30px 15px -17px;
+    }
+
+    div.linha-divisoria {
+        margin-left: -20px;
+    }
+
+    .imagem-da-area {
+        right: 10px;
+        bottom: 260px;
+    }
+
+    div.duvida .setas-fechadas {
+        right: 15px;
     }
 }
 
@@ -96,9 +193,66 @@
 
 }
 
+@media(max-width: 470px) {
+    .area-de-perguntas div.container {
+        width: 410px;
+        height: 380px;
+    }
+
+    div.duvida p {
+        font-size: 15px;
+        padding-right: 80px;
+        padding-left: 40px;
+        margin-left: -30px;
+    }
+
+    .imagem-da-area {
+        right: 10px;
+        bottom: 300px;
+    }
+
+    .duvidas-frequentes h2 {
+        margin-top: 60px;
+        margin-bottom: 14px;
+        margin-left: -8px;
+    }
+
+    .resposta {
+        font-size: 15px;
+        margin: 10px 30px 15px -7px;
+    }
+
+    div.linha-divisoria {
+        margin-left: -33px;
+    }
+
+}
+
+@media(max-width: 460px) {
+    .rodape h2 {
+        font-size: 16px;
+    }
+}
+
 @media(max-width: 430px) {
     .servico .texto h1 {
         font-size: 25px;
+    }
+}
+
+@media(max-width: 425px) {
+    .area-de-perguntas div.container {
+        width: 360px;
+        height: 380px;
+    }
+
+    div.duvida p {
+        padding-right: 25px;
+    }
+
+    div.linha-divisoria {
+        width: 317px;
+        margin: 10px 0px 15px -10px;
     }
 }
 
@@ -116,17 +270,86 @@
     }
 }
 
+@media(max-width: 374px) {
+    .area-de-perguntas div.container {
+        width: 330px;
+        height: 405px;
+    }
+
+    .imagem-da-area {
+        right: 10px;
+        bottom: 320px;
+    }
+
+    div.linha-divisoria {
+        width: 285px;
+    }
+
+    div.duvida p {
+        font-size: 14px;
+        padding-right: 25px;
+        margin-left: -30px;
+    }
+
+    div.duvida .setas-fechadas {
+        display: none;
+    }
+
+    div.duvida p:hover {
+        color: rgb(23, 11, 192);
+        transition: 0.2s ease-in-out;
+    }
+
+    .resposta {
+        font-size: 15px;
+        margin: 10px 61px 15px -7px;
+    }
+}
+
 @media(max-width: 350px) {
     .servico .texto h1 {
         width: 170px;
     }
 }
 
+@media(max-width: 345px) {
+    .area-de-perguntas div.container {
+        width: 285px;
+        height: 405px;
+    }
+
+    div.duvida p {
+        padding-right: 62px;
+    }
+
+    .resposta {
+        font-size: 15px;
+        margin: 10px 90px 15px -7px;
+    }
+
+    div.linha-divisoria {
+        width: 243px;
+    }
+
+}
 
 @media(max-width: 323px) {
     .servico img {
         width: 170px;
     }
+}
+
+@media(max-width: 330px) {
+    .redes ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape p {
+        font-size: 14px;
+    }
+
+
 }
 
 @media(max-width: 310px) {
