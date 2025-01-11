@@ -72,6 +72,7 @@ nav#navegação-mini-menu {
     margin: 20px;
     padding: 10px;
     transition: 0.2s ease-in-out;
+    outline: none;
 }
 
 .mini-menu li:hover {
@@ -177,6 +178,7 @@ nav#navegação-mini-menu {
 .habilidades .conhecimento-de-programacao li img {
     cursor: pointer;
     width: 120px;
+    outline: none;
 }
 
 .habilidades .conhecimento-de-programacao li:first-child img {
@@ -205,6 +207,7 @@ div.container  {
     height: 347px;
     position: relative;
     box-shadow: 1px 10px 20px 8px #b8b8b8;
+    outline: none;
 }
 
 .imagem-da-area {
@@ -225,6 +228,7 @@ div.container  {
 .duvidas-frequentes {
     margin-left: 200px;
     cursor: pointer;
+    outline: none;
 }
 
 div.duvida {
@@ -242,6 +246,7 @@ div.duvida p {
     min-width: 344px;
     font-weight: 500;
     transition: 0.5s ease-in-out;
+    outline: none;
 }
 
 .resposta {
@@ -250,12 +255,14 @@ div.duvida p {
     text-align: justify;
     hyphens: auto;
     animation: animacao-de-respostas 0.4s ease-in-out;
+    outline: none;
 }
 
 div.duvida .setas-fechadas {
     content: url(../images/seta-fechada.png);
      position: absolute;
      right: 35px;
+    outline: none;
 }
 
 .nao-mostrar {
