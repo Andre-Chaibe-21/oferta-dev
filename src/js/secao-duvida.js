@@ -12,7 +12,7 @@ duvidaUm.addEventListener("click", () => {
 duvidaDois.addEventListener("click", () => {
     respostas[1].classList.toggle("nao-mostrar");
     respostas[0].classList.add("nao-mostrar")
-
+    respostas[2].classList.add("nao-mostrar")
 });
 
 duvidaTres.addEventListener("click", () => {
