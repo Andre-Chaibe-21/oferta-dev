@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 body {
     font-family: "Poppins", serif;
     background-color: #fff;
@@ -180,6 +179,7 @@ nav#navegação-mini-menu {
     cursor: pointer;
     width: 120px;
     outline: none;
+    border-radius: 20px;
 }
 
 .habilidades .conhecimento-de-programacao li:first-child img {
@@ -191,16 +191,16 @@ nav#navegação-mini-menu {
     opacity: 0.7;
 }
 
-section.area-de-perguntas {
+section.secao-duvidas {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70vh;
-    font-family: "Roboto", sans-serif;
     margin-top: 50px;
+    position: relative;
 }
 
-div.container  {
+div.carrosel {
     display: flex;
     background-color: #fcfcfc;
     border-radius: 20px;
@@ -209,65 +209,83 @@ div.container  {
     position: relative;
     box-shadow: 1px 10px 20px 8px #b8b8b8;
     outline: none;
-}
-
-.imagem-da-area {
-    position: absolute;
-    width: 278px;
-    height: 278px;
-    right: 490px;
-    margin-top: 33px;
-    border-radius: 50%;
-    background-color: #ffffff;
-}
-
-.duvidas-frequentes h2 {
-    margin-top: 60px;
-    margin-bottom: 14px;
-}
-
-.duvidas-frequentes {
-    margin-left: 200px;
-    cursor: pointer;
-    outline: none;
-}
-
-div.duvida {
-    display: flex;
-    align-items: center;
-    margin: 15px 25px 15px 0px;
-}
-
-div.linha-divisoria {
-    border-bottom: 1px solid #d4d4d4;
-    width: 390px;
-}
-
-div.duvida p {
-    min-width: 344px;
-    font-weight: 500;
-    transition: 0.5s ease-in-out;
-    outline: none;
-}
-
-.resposta {
-    margin: 10px 80px 15px 0px;
-    max-width: 350px;
-    text-align: justify;
-    hyphens: auto;
-    animation: animacao-de-respostas 0.4s ease-in-out;
-    outline: none;
-}
-
-div.duvida .setas-fechadas {
-    content: url(../images/seta-fechada.png);
-     position: absolute;
-     right: 35px;
-    outline: none;
+    margin-bottom: 130px;
 }
 
 .nao-mostrar {
     display: none;
+}
+
+.mostrar {
+    display: flex;
+}
+
+ul .duvidas {
+    display: flex;
+}
+
+.carrosel div.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.duvidas .imagem img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -9px;
+    height: 106%;
+    width: 248px;
+}
+
+.conteudo-duvidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#duvida-dois,
+#duvida-tres,
+#duvida-quatro {
+    display: none;
+}
+
+.carrosel .conteudo .pergunta {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.carrosel .conteudo .resposta {
+    margin: 20px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.resposta span {
+    color: rgba(24, 173, 91, 0.521);
+    font-weight: bold;
+}
+
+.secao-duvidas .seta {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+}
+
+.secao-duvidas .seta.seta-inversa {
+    transform: rotate(180deg);
+    left: 10%;
+}
+
+.secao-duvidas .seta {
+    width: 50px;
+    width: 50px;
+    background-color: rgb(215, 221, 221);
+    border-radius: 50%;
 }
 
 footer.rodape {
@@ -278,7 +296,7 @@ footer.rodape {
     background-color: #464646;
     height: 35vh;
     width: 100%;
-    margin-top: 165px;
+    margin-top: 140px;
 }
 
 .rodape div {
