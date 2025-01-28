@@ -209,7 +209,6 @@ div.carrosel {
     position: relative;
     box-shadow: 1px 10px 20px 8px #b8b8b8;
     outline: none;
-    margin-bottom: 130px;
 }
 
 .nao-mostrar {
@@ -296,7 +295,7 @@ footer.rodape {
     background-color: #464646;
     height: 35vh;
     width: 100%;
-    margin-top: 140px;
+    margin-top: 120px;
 }
 
 .rodape div {
