@@ -209,17 +209,6 @@ div.carrosel {
     animation: degrade-animado 4s infinite alternate;
 }
 
-@keyframes entrada {
-    from {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
 ul .duvidas {
     display: flex;
 }
@@ -380,15 +369,3 @@ footer.rodape {
         background-position-x: 100%;
     }
 }
-
-@keyframes entrada {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
