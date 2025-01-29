@@ -167,6 +167,10 @@
 
 @media(max-width: 660px) {
 
+    .duvidas .imagem img {
+        display: none;
+    }
+
     div.carrosel {
         width: 400px;
         height: 348px;
