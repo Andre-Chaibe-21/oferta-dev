@@ -155,7 +155,7 @@
     }
 }
 
-@media(max-width: 660px) {
+@media(max-width: 690px) {
     .menu li {
         display: none;
     }
@@ -163,28 +163,9 @@
     #icone-menu-hamburguer {
         display: flex;
     }
+}
 
-    .area-de-perguntas div.container {
-        width: 490px;
-        height: 347px;
-    }
-
-    .duvidas-frequentes {
-        margin-left: 40px;
-    }
-
-    div.duvida .setas-fechadas {
-        right: 20px;
-    }
-
-    .imagem-da-area {
-        right: -30px;
-        bottom: 270px;
-    }
-
-    .duvidas .imagem img {
-        display: none;
-    }
+@media(max-width: 660px) {
 
     div.carrosel {
         width: 400px;
@@ -217,7 +198,7 @@
     }
 }
 
-@media(min-width: 660px) {
+@media(min-width: 691px) {
     .mini-menu {
         display: none;
     }
