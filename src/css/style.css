@@ -1,6 +1,8 @@
 body {
     font-family: "Poppins", serif;
     background-color: #fff;
+    background-size: contain;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url("../images/fundo-branco-com-linhas.jpg") no-repeat bottom center;
 }
 
 .cabecalho {
@@ -15,6 +17,7 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 100px;
+    background-color: #222222;
 }
 
 .menu li {
@@ -49,12 +52,26 @@ nav#navegação-mini-menu {
     position: relative;
 }
 
+.cabecalho .menu li img.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 20%;
+    display: none;
+}
+
 .mini-menu {
     position: absolute;
     top: -20px;
     display: flex;
     width: 236px;
-    height: 350px;
+    height: 300px;
     border-radius: 10px;
     flex-direction: column;
     justify-content: center;
@@ -65,12 +82,16 @@ nav#navegação-mini-menu {
 }
 
 .mini-menu li {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     transition: 0.2s ease-in-out;
     outline: none;
 }
 
+.mini-menu li:first-child {
+    margin-top: 50px;
+    }
+    
 .mini-menu li:hover {
     outline: 1px solid #fff;
 }
@@ -80,9 +101,7 @@ nav#navegação-mini-menu {
 }
 
 .introducao {
-    background: linear-gradient(rgba(63, 22, 81, 0.8), rgba(63, 22, 81, 0.8)), url("../images/background-cidade-roxa-tecnológica.jpg");
-    background-position: center;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(63, 22, 81, 0.7), rgba(63, 22, 81, 0.7)), url("../images/ilustração-de-programador.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -133,14 +152,12 @@ nav#navegação-mini-menu {
     max-width: 670px;
     font-size: 20px;
     hyphens: auto;
-
 }
 
 .servico img {
     border-radius: 50%;
     box-shadow: -5px 3px 18px 10px #afafaf;
 }
-
 
 .habilidades {
     display: flex;
@@ -207,6 +224,29 @@ div.carrosel {
     box-shadow: 1px 10px 20px 8px #b8b8b8;
     outline: none;
     animation: degrade-animado 4s infinite alternate;
+    color: #fff;
+    background-size: contain;
+    background-position: center;
+}
+
+.oii {
+    border-radius: 0;
+}
+
+.cor-primaria-carrosel {
+    background: linear-gradient(rgba(182, 26, 182, 0.9), rgba(177, 32, 112, 0.9), rgba(170, 25, 110, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
+}
+
+.cor-secundaria-carrosel {
+    background: linear-gradient(rgba(15, 145, 45, 0.9), rgba(17, 99, 28, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
+}
+
+.cor-terciaria-carrosel {
+    background: linear-gradient(rgba(24, 30, 199, 0.9), rgba(8, 45, 226, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
+}
+
+.cor-quartenaria-carrosel {
+    background: linear-gradient(rgba(187, 22, 22, 0.9), rgba(212, 15, 15, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
 }
 
 ul .duvidas {
@@ -228,8 +268,8 @@ li.nao-mostrar {
 .duvidas .imagem img {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top: -9px;
-    height: 106%;
+    transform: translateY(3px);
+    height: 97.91%;
     width: 248px;
 }
 
@@ -244,7 +284,7 @@ li.nao-mostrar {
 .carrosel .conteudo .pergunta {
     font-size: 20px;
     margin: 20px;
-    animation: animacao-de-pegunta  0.6s ease-in-out;
+    animation: animacao-de-pegunta 0.6s ease-in-out;
 }
 
 .carrosel .conteudo .resposta {
@@ -255,7 +295,7 @@ li.nao-mostrar {
 }
 
 .resposta span {
-    color: rgba(24, 173, 91, 0.521);
+    color: rgba(10, 228, 108, 0.80);
     font-weight: bold;
 }
 
@@ -284,9 +324,14 @@ footer.rodape {
     align-items: center;
     color: #fff;
     background-color: #464646;
-    height: 35vh;
+    height: 50vh;
     width: 100%;
     margin-top: 120px;
+}
+
+.rodape div a {
+    width: 200px;
+    height: 200px;
 }
 
 .rodape div {
@@ -300,6 +345,14 @@ footer.rodape {
 .rodape div p {
     text-align: center;
     margin: 0px 10px 0px 10px;
+}
+
+.rodape div span a {
+    color: #fff;
+}
+
+.rodape div span a:hover {
+    color: rgb(18, 100, 223, 0.7);
 }
 
 .rodape h2 {
@@ -368,7 +421,7 @@ footer.rodape {
     }
 
     100% {
-        background-position-x: 100%;
+        background-position-x: 200%;
     }
 }
 
@@ -391,15 +444,5 @@ footer.rodape {
     100% {
         transform: translateY(0px);
         opacity: 1;
-    }
-}
-
-@keyframes animacao-de-introducao {
-    0% {
-        transform: scale(0.9);
-    }
-
-    100% {
-        transform: scale(1);
     }
 }

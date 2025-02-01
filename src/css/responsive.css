@@ -70,6 +70,22 @@
     }
 }
 
+@media(max-width: 850px) {
+    .menu li {
+        display: none;
+    }
+
+    .cabecalho .menu li:first-child {
+        display: flex;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+    }
+    
+}
+
 @media(max-width: 830px) {
     div.container {
         width: 590px;
@@ -109,26 +125,26 @@
     }
 
     #duvida-um .imagem img {
-        margin-top: -1px;
-        height: 101%;
+        margin-top: -3.91px;
+        height: 100.58%;
         width: 200px;
     }
 
     #duvida-dois .imagem img {
-        margin-top: -39px;
+        margin-top: -43px;
         height: 129%;
         width: 200px;
     }
 
     #duvida-tres .imagem img {
-        margin-top: -39px;
+        margin-top: -43px;
         height: 129%;
         width: 200px;
     }
 
     #duvida-quatro .imagem img {
-        margin-top: -14px;
-        height: 109%;
+        margin-top: -18px;
+        height: 108.94%;
         width: 200px;
     }
 
@@ -155,10 +171,7 @@
     }
 }
 
-@media(max-width: 690px) {
-    .menu li {
-        display: none;
-    }
+@media(max-width: 850px) {
 
     #icone-menu-hamburguer {
         display: flex;
@@ -174,8 +187,6 @@
     div.carrosel {
         width: 400px;
         height: 348px;
-        color: #fff;
-        background: linear-gradient(rgba(168, 29, 126, 0.9), rgba(177, 32, 112, 0.9), rgba(170, 25, 110, 0.9)), url("../images/imagem-de-computador.png");
         background-size: contain;
     }
 
@@ -192,17 +203,13 @@
         text-align: center;
     }
 
-    .resposta span {
-        color: rgba(10, 228, 108, 0.80);
-        font-weight: bold;
-    }
 
     #duvida-quatro .resposta {
         max-width: 352px;
     }
 }
 
-@media(min-width: 691px) {
+@media(min-width: 850px) {
     .mini-menu {
         display: none;
     }
@@ -321,6 +328,11 @@
 
     #duvida-tres .conteudo-duvidas .resposta {
         text-align: center;
+    }
+
+    .menu .logo {
+        width: 70px;
+        height: 70px;
     }
 }
 
