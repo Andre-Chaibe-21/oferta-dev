@@ -323,10 +323,15 @@ footer.rodape {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: #464646;
+    background: linear-gradient(rgb(66, 65, 65), rgb(57, 55, 55));
     height: 50vh;
     width: 100%;
+}
+
+img.efeito {
     margin-top: 120px;
+    width: 100%;
+    transform: translateY(7px);
 }
 
 .rodape div a {
