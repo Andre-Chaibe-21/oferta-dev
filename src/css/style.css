@@ -329,9 +329,9 @@ footer.rodape {
 }
 
 img.efeito {
-    margin-top: 120px;
+    display: none;
+    margin-top: -50px;
     width: 100%;
-    transform: translateY(7px);
 }
 
 .rodape div a {
