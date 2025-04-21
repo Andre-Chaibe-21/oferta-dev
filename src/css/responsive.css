@@ -186,15 +186,14 @@
 @media (max-width: 488px) {
 
     .servico .texto h1 {
-        font-size: 6vw;
+        font-size: 6.6vw;
     }
+    
 
     .servico .texto p {
-        font-size: 5.3vw;
+      text-align: center;
     }
     
-    
-
     .habilidades h2 {
         font-size: 23px;
     }
