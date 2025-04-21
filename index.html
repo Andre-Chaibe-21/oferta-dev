@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC Dev</title>
+    <title>AC</title>
     <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./src/css/reset.css">
@@ -35,7 +35,7 @@
     <header class="cabecalho">
         <nav>
             <ul class="menu">
-                <li><img class="logo" src="./src/images/image.png" alt="logo do site: AC Dev"></li>
+                <li><img class="logo" src="./src/images/logo.jpg" alt="logo do site: André Chaibe"></li>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#servico">Quem sou eu</a></li>
                 <li><a href="#secao-duvidas">Dúvidas frequentes</a></li>
@@ -73,7 +73,7 @@
 
     <section class="servico" id="servico">
 
-        <img src="./src/images/Design sem nome (15).png" alt="foto do programador">
+        <img src="./src/images/imagem-programador.png" alt="foto do programador">
 
         <div class="texto">
             <h1>Meu nome é André Chaibe</h1>
@@ -87,7 +87,7 @@
     <div class="habilidades">
         <h2>Habilidades técnicas :</h2>
 
-        <ul class="conhecimento-de-programacao">
+        <ul class="habilidades-tecnicas">
 
             <li>
                 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img
@@ -112,90 +112,33 @@
 
     <section class="secao-duvidas" id="secao-duvidas">
 
-        <div class="carrosel cor-primaria-carrosel">
+        <div id="carrosel">
 
-            <div class="conteudo">
-
-                <ul>
-
-                    <li class="duvidas" id="duvida-um">
-
-                        <div class="conteudo-duvidas">
-
-                            <h2 class="pergunta">Qual a diferença entre um programador web e um designer?</h2>
-                            <p class="resposta"><span>R:</span> O designer cuida da aparência visual do site na forma
-                                estática, enquanto o
-                                programador web transforma esse design em algo dinâmico e funcional, lidando com
-                                códigos,
-                                funcionalidades e integrações.</p>
-                        </div>
-
-                        <div class="imagem">
-                            <img src="./src/images/formas-geometricas.jpg"
-                                alt="ilustração de formas geométricas em um fundo branco">
-                        </div>
-
-                    </li>
-
-                    <li class="duvidas nao-mostrar" id="duvida-dois">
-                        <div class="conteudo-duvidas">
-                            <h2 class="pergunta">Quanto custa desenvolver um site ou aplicativo?</h2>
-                            <p class="resposta"><span>R:</span> O custo varia conforme a complexidade do projeto,
-                                tecnologias usadas e tempo de desenvolvimento.</p>
-                        </div>
-
-                        <div class="imagem">
-                            <img src="./src/images/formas-geometricas.jpg"
-                                alt="ilustração de formas geométricas em um fundo branco">
-                        </div>
-
-                    </li>
-
-                    <li class="duvidas nao-mostrar" id="duvida-tres">
-
-                        <div class="conteudo-duvidas">
-                            <h2 class="pergunta">Qual é o nível de suporte que você oferece após a entrega do projeto?
-                            </h2>
-                            <p class="resposta"><span>R:</span> Ofereço suporte contínuo para resolver qualquer problema
-                                ou dúvida que possa surgir.</p>
-                        </div>
-
-                        <div class="imagem">
-                            <img src="./src/images/formas-geometricas.jpg"
-                                alt="ilustração de formas geométricas em um fundo branco">
-                        </div>
-
-                    </li>
-
-                    <li class="duvidas nao-mostrar" id="duvida-quatro">
-                        <div class="conteudo-duvidas">
-                            <h2 class="pergunta">Posso acompanhar o desenvolvimento do meu projeto?</h2>
-                            <p class="resposta"><span>R:</span> Sim,você será atualizado regularmente sobre o progresso,
-                                e feedback será coletado em cada etapa para garantir que o site atenda às suas
-                                expectativas.</p>
-                        </div>
-
-                        <div class="imagem">
-                            <img src="./src/images/formas-geometricas.jpg"
-                                alt="ilustração de formas geométricas em um fundo branco">
-                        </div>
-
-                    </li>
-
-                </ul>
-
+            <div id="conteudo-duvidas">
+                <h2 id="duvida">Qual a diferença entre um programador web e um designer?</h2>
+                
+                <p id="resposta"><span>R:</span> O designer cuida da aparência visual do site na forma
+                    estática, enquanto o
+                    programador web transforma esse design em algo dinâmico e funcional, lidando com
+                    códigos,
+                    funcionalidades e integrações.</p>
             </div>
-
 
         </div>
 
-        <img class="seta" src="./src/images/si--chevron-right-circle-line.svg" alt="seta voltar">
-        <img class="seta seta-inversa opacidade" src="./src/images/si--chevron-right-circle-line.svg"
-            alt="seta avançar">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="seta opacidade desativa-clique" viewBox="0 0 24 24">
+            <path fill="#e1e1e1"
+                d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z" />
+        </svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="seta seta-inversa" viewBox="0 0 24 24">
+            <path fill="#e1e1e1"
+                d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z" />
+        </svg>
+
 
     </section>
-
-    <img class="efeito" src="./src/images/linha-de-efeito-colorida.png" alt="linha-de-efeito-colorida">
 
     <footer class="rodape" id="contato">
 
@@ -227,7 +170,7 @@
     </footer>
 
     <script src="./src/js/menu.js"></script>
-    <script src="./src/js/secao-duvida.js"></script>
+    <script src="./src/js/carrosel.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
         integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="

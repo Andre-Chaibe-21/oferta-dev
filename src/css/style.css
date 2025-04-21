@@ -60,9 +60,9 @@ nav#navegação-mini-menu {
 }
 
 .logo {
-    width: 90px;
-    height: 90px;
-    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: none;
 }
 
@@ -78,20 +78,19 @@ nav#navegação-mini-menu {
     align-items: center;
     background: linear-gradient(45deg, #56028f, #052c74);
     display: none;
-    transition: 0.2s ease-in-out;
+    transition: 10s ease-in-out;
 }
 
 .mini-menu li {
     margin: 10px;
     padding: 10px;
-    transition: 0.2s ease-in-out;
-    outline: none;
+    transition: 0.3s ease-in-out;
 }
 
 .mini-menu li:first-child {
     margin-top: 50px;
-    }
-    
+}
+
 .mini-menu li:hover {
     outline: 1px solid #fff;
 }
@@ -181,7 +180,7 @@ nav#navegação-mini-menu {
     animation: degrade-animado 3s infinite alternate;
 }
 
-.habilidades .conhecimento-de-programacao {
+.habilidades .habilidades-tecnicas {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,18 +188,18 @@ nav#navegação-mini-menu {
 }
 
 
-.habilidades .conhecimento-de-programacao li img {
+.habilidades .habilidades-tecnicas li img {
     cursor: pointer;
     width: 120px;
     outline: none;
     border-radius: 20px;
 }
 
-.habilidades .conhecimento-de-programacao li:first-child img {
+.habilidades .habilidades-tecnicas li:first-child img {
     margin-left: 300px;
 }
 
-.habilidades .conhecimento-de-programacao li:hover {
+.habilidades .habilidades-tecnicas li:hover {
     transition: 0.3s ease-in-out;
     opacity: 0.7;
 }
@@ -210,112 +209,87 @@ section.secao-duvidas {
     align-items: center;
     justify-content: center;
     height: 70vh;
-    margin-top: 50px;
+    margin: 10vh 0px 20vh 0px;
     position: relative;
 }
 
-div.carrosel {
+div#carrosel {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fcfcfc;
     border-radius: 20px;
-    width: 655px;
+    width: 80%;
+    max-width: 67em;
     height: 347px;
     position: relative;
     box-shadow: 1px 10px 20px 8px #b8b8b8;
     outline: none;
-    animation: degrade-animado 4s infinite alternate;
+    animation: degrade-animado 7s infinite alternate;
     color: #fff;
     background-size: contain;
-    background-position: center;
+    background: linear-gradient(rgba(182, 26, 182, 0.9), rgba(177, 32, 112, 0.9), rgba(170, 25, 110, 0.9)), url("../images/background-código.jpg") center;
 }
 
-.oii {
-    border-radius: 0;
-}
-
-.cor-primaria-carrosel {
-    background: linear-gradient(rgba(182, 26, 182, 0.9), rgba(177, 32, 112, 0.9), rgba(170, 25, 110, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
-}
-
-.cor-secundaria-carrosel {
-    background: linear-gradient(rgba(15, 145, 45, 0.9), rgba(17, 99, 28, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
-}
-
-.cor-terciaria-carrosel {
-    background: linear-gradient(rgba(24, 30, 199, 0.9), rgba(8, 45, 226, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
-}
-
-.cor-quartenaria-carrosel {
-    background: linear-gradient(rgba(187, 22, 22, 0.9), rgba(212, 15, 15, 0.9)), url("../images/formas-geometricas-coloridas-de-vista-superior.avif");
-}
-
-ul .duvidas {
-    display: flex;
-}
-
-li.nao-mostrar {
-    display: none;
-}
-
-
-.carrosel div.conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.duvidas .imagem img {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transform: translateY(3px);
-    height: 97.91%;
-    width: 248px;
-}
-
-.conteudo-duvidas {
+#conteudo-duvidas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-
-.carrosel .conteudo .pergunta {
+div#carrosel #duvida {
     font-size: 20px;
-    margin: 20px;
-    animation: animacao-de-pegunta 0.6s ease-in-out;
+    margin: 25px 5px 10px 5px;
+    max-width: 350px;
+    text-align: center;
+    animation: animacao-de-responda 0.6s ease-in-out;
 }
 
-.carrosel .conteudo .resposta {
+div#carrosel #resposta {
+    letter-spacing: -1px;
+    max-width: 350px;
     margin: 20px;
     text-align: justify;
     hyphens: auto;
-    animation: animacao-de-responda 0.4s ease-in-out;
+    font-size: 17px;
+    animation: animacao-de-responda 0.6s ease-in-out;
 }
 
-.resposta span {
+#resposta span {
     color: rgba(10, 228, 108, 0.80);
     font-weight: bold;
 }
 
 .secao-duvidas .seta {
-    width: 50px;
-    height: 50px;
     cursor: pointer;
     position: absolute;
-    border-radius: 50%;
-    right: 10%;
-    background-color: rgb(215, 221, 221);
+    border: 5px solid #ffffff;
+    max-width: 70px;
+    height: 250px;
+    padding-left: 10px;
+    transition: 0.4s ease-in-out;
+    border-radius: 15px;
+    background-color: rgba(185, 184, 184, 0.4);
+}
+
+.secao-duvidas .seta:first-of-type {
+    left: 14%;
 }
 
 .secao-duvidas .seta.seta-inversa {
     transform: rotate(180deg);
-    left: 10%;
+    right: 14%;
+    color: #806666;
+
 }
 
 .opacidade {
     opacity: 0.3;
+}
+
+.desativa-clique {
+    pointer-events: none;
 }
 
 footer.rodape {
@@ -324,13 +298,7 @@ footer.rodape {
     align-items: center;
     color: #fff;
     background: linear-gradient(rgb(66, 65, 65), rgb(57, 55, 55));
-    height: 50vh;
-    width: 100%;
-}
-
-img.efeito {
-    display: none;
-    margin-top: -50px;
+    height: 50%;
     width: 100%;
 }
 
@@ -363,7 +331,7 @@ img.efeito {
 .rodape h2 {
     font-size: 18px;
     text-align: center;
-    margin: 10px;
+    margin: 25px 10px 10px 10px;
 }
 
 .redes ul {
@@ -398,17 +366,6 @@ img.efeito {
     border-radius: 50%;
 }
 
-@keyframes animacao-de-respostas {
-    0% {
-        opacity: 0.2;
-        margin-top: 20px;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes animacao-de-seta {
     0% {
         transform: translateY(0);
@@ -426,7 +383,7 @@ img.efeito {
     }
 
     100% {
-        background-position-x: 200%;
+        background-position-x: 100%;
     }
 }
 

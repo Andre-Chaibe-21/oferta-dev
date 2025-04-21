@@ -1,3 +1,14 @@
+@media(min-width: 1200px) {
+    .secao-duvidas .seta:first-of-type {
+        left: 25%;
+    }
+    
+    .secao-duvidas .seta.seta-inversa {
+        right: 25%;
+    }
+}
+
+
 @media(min-width: 1010px) {
 
     .rodape {
@@ -27,14 +38,14 @@
     }
 
     .habilidades h2 {
-        margin: 0px 0px 40px 0px;
+        margin: 7vh 0px 40px 0px;
     }
 
-    .habilidades .conhecimento-de-programacao li:hover {
+    .habilidades .habilidades-tecnicas li:hover {
         transform: scale(0.9);
     }
 
-    .habilidades .conhecimento-de-programacao li:first-child img {
+    .habilidades .habilidades-tecnicas li:first-child img {
         margin-left: 0px;
     }
 
@@ -46,35 +57,6 @@
         height: 347px;
     }
 
-    .imagem-da-area {
-        width: 200px;
-        height: 200px;
-        right: 490px;
-        bottom: 85px;
-    }
-
-    .duvidas-frequentes {
-        margin-left: 130px;
-    }
-
-    .secao-duvidas .seta {
-        right: 6%;
-    }
-
-    .secao-duvidas .seta.seta-inversa {
-        left: 6%;
-    }
-
-}
-
-@media(max-width: 900px) {
-    .secao-duvidas .seta {
-        right: 2%;
-    }
-
-    .secao-duvidas .seta.seta-inversa {
-        left: 2%;
-    }
 }
 
 @media(max-width: 850px) {
@@ -87,10 +69,10 @@
     }
 
     .logo {
-        width: 85px;
-        height: 85px;
+        width: 60px;
+        height: 60px;
     }
-    
+
 }
 
 @media(max-width: 830px) {
@@ -102,66 +84,45 @@
     .duvidas-frequentes {
         margin-left: 100px;
     }
-
-    .imagem-da-area {
-        width: 120px;
-        height: 120px;
-        bottom: 270px;
-    }
-
-    div.carrosel {
-        width: 500px;
-        height: 348px;
-        box-shadow: 1px 10px 20px 6px #b8b8b8;
-    }
-
-    .conteudo-duvidas .pergunta {
-        text-align: center;
-    }
-
-    #duvida-um .conteudo-duvidas .pergunta {
-        transform: translateY(20px);
-    }
-
-    #duvida-dois .conteudo-duvidas h2 {
-        max-width: 200px;
-    }
-
-    #duvida-tres .conteudo-duvidas .resposta {
-        max-width: 252px;
-    }
-
-    #duvida-um .imagem img {
-        margin-top: -3.91px;
-        height: 100.58%;
-        width: 200px;
-    }
-
-    #duvida-dois .imagem img {
-        margin-top: -43px;
-        height: 129%;
-        width: 200px;
-    }
-
-    #duvida-tres .imagem img {
-        margin-top: -43px;
-        height: 129%;
-        width: 200px;
-    }
-
-    #duvida-quatro .imagem img {
-        margin-top: -18px;
-        height: 108.94%;
-        width: 200px;
-    }
-
-    #duvida-quatro .resposta {
-        max-width: 230px;
-    }
-
 }
 
 @media(max-width: 720px) {
+
+    .secao-duvidas .seta {
+        cursor: pointer;
+        position: absolute;
+        border: 5px solid #ffffff;
+        padding-left: 10px;
+        transition: 0.4s ease-in-out;
+        border-radius: 15px;
+        background-color: rgba(185, 184, 184, 0.4);
+
+    }
+
+    .secao-duvidas .seta:first-of-type {
+        left: 9%;
+    }
+
+    .secao-duvidas .seta.seta-inversa {
+        right: 9%;
+    }
+
+    .secao-duvidas .seta,.seta-inversa {
+          height: 100px;
+          bottom: -6vh;
+          background-color: #444244;
+    }
+
+    div#carrosel #duvida {
+        max-width: 390px;
+    }
+
+    div#carrosel #resposta {
+        margin: 0px 10px;
+        text-align: center;
+        max-width: 390px;
+    }
+
     #icone-de-localizacao {
         display: none;
     }
@@ -173,7 +134,7 @@
 
 @media(max-width: 715px) {
     .servico .texto p {
-        font-size: 18px;
+        font-size: 2.8vh;
         margin: 0px 30px 10px 30px;
     }
 }
@@ -182,37 +143,6 @@
 
     #icone-menu-hamburguer {
         display: flex;
-    }
-}
-
-@media(max-width: 660px) {
-
-    .duvidas .imagem img {
-        display: none;
-    }
-
-    div.carrosel {
-        width: 400px;
-        height: 348px;
-        background-size: contain;
-    }
-
-    #duvida-dois .conteudo-duvidas h2 {
-        max-width: 300px;
-        text-align: center;
-    }
-
-    #duvida-tres .conteudo-duvidas .resposta {
-        max-width: 355px;
-    }
-
-    .carrosel .conteudo .pergunta {
-        text-align: center;
-    }
-
-
-    #duvida-quatro .resposta {
-        max-width: 352px;
     }
 }
 
@@ -227,90 +157,61 @@
         padding: 10px 70px 10px 70px;
     }
 
-    .habilidades .conhecimento-de-programacao li img {
+    .habilidades .habilidades-tecnicas li img {
         width: 98px;
     }
 }
 
-@media(max-width: 560px) {
-    div.carrosel {
-        width: 360px;
-        height: 348px;
-        background-size: contain;
+@media (max-width: 500px) { 
+    
+    div#carrosel {
+        width: 80%;
+        height: 20em;
     }
 
-    img.efeito {
-        display: flex;
+    div#carrosel #duvida {
+        font-size: 18px;
+        margin: 0px 20px 10px 20px;
     }
 
-}
-
-@media(max-width: 490px) {
-
-    div.carrosel {
-        width: 320px;
-        height: 328px;
-    }
-
-    #duvida-dois .conteudo-duvidas .resposta {
+    
+    div#carrosel #resposta {
         font-size: 15px;
+        text-align: center;
+        hyphens: none;
     }
-
-    #duvida-um .conteudo-duvidas .resposta {
-        font-size: 15px;
-    }
-
-    #duvida-um .conteudo-duvidas h2 {
-        transform: translateY(20px);
-    }
+    
 }
 
 @media (max-width: 488px) {
+
     .servico .texto h1 {
-        font-size: 28px;
+        font-size: 6vw;
     }
 
+    .servico .texto p {
+        font-size: 5.3vw;
+    }
+    
+    
+
     .habilidades h2 {
-        padding: 10px 30px 10px 30px;
         font-size: 23px;
     }
 
-    .habilidades .conhecimento-de-programacao li img {
+    .habilidades .habilidades-tecnicas li img {
         width: 65px;
     }
 
-    .habilidades .conhecimento-de-programacao {
+    .habilidades .habilidades-tecnicas {
         gap: 48px;
     }
 
 }
 
 @media(max-width: 470px) {
-    .area-de-perguntas div.container {
-        width: 410px;
-        height: 380px;
-    }
 
-    div.duvida p {
-        font-size: 15px;
-        padding-right: 80px;
-        padding-left: 40px;
-        margin-left: -30px;
-    }
-
-    .imagem-da-area {
-        right: 10px;
-        bottom: 300px;
-    }
-
-    .duvidas-frequentes h2 {
-        margin-top: 60px;
-        margin-bottom: 14px;
-        margin-left: -8px;
-    }
-
-    .resposta {
-        font-size: 15px;
+    #resposta {
         margin: 10px 30px 15px -7px;
     }
 
@@ -322,46 +223,7 @@
     }
 }
 
-@media(max-width: 450px) {
-    div.carrosel {
-        width: 250px;
-        height: 388px;
-    }
-
-    #duvida-dois .conteudo-duvidas .resposta {
-        text-align: center;
-        min-width: 180px;
-    }
-
-    .carrosel .conteudo .pergunta {
-        font-size: 18px;
-    }
-
-    #duvida-tres .conteudo-duvidas .resposta {
-        text-align: center;
-    }
-
-    .menu .logo {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-@media(max-width: 430px) {
-    .servico .texto h1 {
-        font-size: 25px;
-    }
-}
-
 @media(max-width: 425px) {
-    .area-de-perguntas div.container {
-        width: 360px;
-        height: 380px;
-    }
-
-    div.duvida p {
-        padding-right: 25px;
-    }
 
     div.linha-divisoria {
         width: 317px;
@@ -369,36 +231,15 @@
     }
 }
 
-@media(max-width: 400px) {
-    .servico .texto h1 {
-        font-size: 22px;
-    }
+@media(max-width: 419px) {
 
     .habilidades h2 {
         font-size: 18px;
     }
 
-    .habilidades .conhecimento-de-programacao {
+    .habilidades .habilidades-tecnicas {
         gap: 20px;
     }
-}
-
-@media(max-width: 380px) {
-    div.carrosel {
-        width: 210px;
-        height: 398px;
-    }
-
-    .carrosel .conteudo .pergunta {
-        font-size: 17px;
-        hyphens: auto;
-    }
-
-    .secao-duvidas .seta {
-        width: 40px;
-        height: 40px;
-    }
-
 }
 
 @media(max-width: 374px) {
@@ -407,39 +248,13 @@
         height: 405px;
     }
 
-    .imagem-da-area {
-        right: 10px;
-        bottom: 320px;
-    }
-
     div.linha-divisoria {
         width: 285px;
-    }
-
-    div.duvida p {
-        font-size: 14px;
-        padding-right: 25px;
-        margin-left: -30px;
-    }
-
-    div.duvida .setas-fechadas {
-        display: none;
     }
 
     div.duvida p:hover {
         color: rgb(23, 11, 192);
         transition: 0.2s ease-in-out;
-    }
-
-    .resposta {
-        font-size: 15px;
-        margin: 10px 61px 15px -7px;
-    }
-}
-
-@media(max-width: 350px) {
-    .servico .texto h1 {
-        width: 170px;
     }
 }
 
@@ -449,15 +264,6 @@
         height: 405px;
     }
 
-    div.duvida p {
-        padding-right: 62px;
-    }
-
-    .resposta {
-        font-size: 15px;
-        margin: 10px 90px 15px -7px;
-    }
-
     div.linha-divisoria {
         width: 243px;
     }
@@ -465,9 +271,23 @@
 }
 
 @media(max-width: 323px) {
+
     .servico img {
         width: 170px;
     }
+
+    div#carrosel #duvida {
+        font-size: 15px;
+        margin: 0px 20px 10px 20px;
+    }
+
+    
+    div#carrosel #resposta {
+        font-size: 14px;
+        text-align: center;
+        hyphens: none;
+    }
+    
 }
 
 @media(max-width: 330px) {
@@ -487,10 +307,6 @@
     .introducao h2 {
         font-size: 35px;
     }
-
-    .servico .texto p {
-        font-size: 15px;
-    }
 }
 
 @media(max-width: 288px) {
@@ -498,7 +314,7 @@
         font-size: 16px;
     }
 
-    .habilidades .conhecimento-de-programacao {
+    .habilidades .habilidades-tecnicas {
         flex-direction: column;
         gap: 14px;
     }
@@ -508,15 +324,5 @@
 @media(max-width: 270px) {
     .introducao h2 {
         font-size: 25px;
-    }
-}
-
-@media(max-width: 275px) {
-    .servico .texto h1 {
-        margin-left: 20px;
-    }
-
-    .servico .texto p {
-        font-size: 12px;
     }
 }
